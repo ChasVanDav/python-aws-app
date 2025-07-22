@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-aws-app
+  labels:
+    app: python-aws-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python-aws-app
+  template:
+    metadata:
+      labels:
+        app: python-aws-app
+    spec: 
+      containers:
+      - name: python-aws-app
+        image: 311141557024.dkr.ecr.us-west-2.amazonaws.com/python-aws-app:latest
+        ports:
+        - containerPort: 80
+        
