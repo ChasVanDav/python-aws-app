@@ -11,6 +11,7 @@ spec:
       app: python-aws-app
   template:
     metadata:
+    
       labels:
         app: python-aws-app
     spec: 
@@ -18,5 +19,5 @@ spec:
       - name: python-aws-app
         image: 311141557024.dkr.ecr.us-west-2.amazonaws.com/python-aws-app:eks-lab
         ports:
-        - containerPort: 80
+        - containerPort: 5000
         
