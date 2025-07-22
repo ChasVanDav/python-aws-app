@@ -1,3 +1,1 @@
 flask
-boto3
-#install awscli via Homebrew (not pip!)
