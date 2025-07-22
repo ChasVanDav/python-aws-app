@@ -16,7 +16,7 @@ spec:
     spec: 
       containers:
       - name: python-aws-app
-        image: 311141557024.dkr.ecr.us-west-2.amazonaws.com/python-aws-app:latest
+        image: 311141557024.dkr.ecr.us-west-2.amazonaws.com/python-aws-app:eks-lab
         ports:
         - containerPort: 80
         
